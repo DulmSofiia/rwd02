@@ -1,0 +1,319 @@
+/*IndexContainer*/
+.container{
+  margin-top: 100px;
+}
+.container .inner-container{
+  padding: 50px 50px 20px;
+}
+.container .inner-container .index{
+  /* background-color: rgb(236, 177, 177); */
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+}
+.container .inner-container .index .sections{
+  flex: 0 1 1400px;
+  /* border: 1px solid; */
+}
+.container .inner-container .index .sections .section.sec1{
+  box-sizing: border-box;
+  /* border: 1px solid #ccc; */
+ 
+}
+.container .inner-container .index .sections .section.sec1 .sec-con{
+
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con{
+  box-sizing: border-box;
+  padding: 2px;
+}
+/*Grid*/
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul{
+  display: grid;
+  grid-template-rows: repeat(2, minmax(570px, auto));
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(570px, auto);
+
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s;
+  /* opacity: 1; */
+  /* filter: hue-rotate(90%); */
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li:hover{
+  transform: translateY(-0.5%);
+  /* transform: scale(1.02); */
+  opacity: 0.8;
+  box-shadow: 0 1px 1px #555;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li:active{
+  transform: translateY(0.5%);
+  /* transform: scale(1.02); */
+  /* opacity: 0.5; */
+  box-shadow: 0 1px 1px #555;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li img{
+ width: 100%;
+ height: auto;
+ display: block;
+ border-radius: 3px;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li .p-con{
+  /* border: 1px solid; */
+  height: calc( 570px - 430px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px 10px;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li .p-con p{
+  /* border: 1px solid; */
+  padding: 10px 5px;
+  text-align: center;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li .p-con p.p1{
+  font-size: 24px;
+  line-height: 30px;
+  padding: 5px 0 0;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li .p-con p.p2{
+  font-size: 16px;
+  line-height: 22px;
+  padding: 5px 0 10px;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .paging{
+  display: flex;
+  justify-content: center;
+  /* background-color: #ccc; */
+  padding: 50px 0;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .paging .paging-layout{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  /* background-color: #555; */
+  flex: 0 1 300px;
+  align-content: center;
+  cursor: pointer;
+  /* border: 1px solid; */
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .paging .paging-layout span.arrow{
+  display: block;
+  flex: 1;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .paging .paging-layout span.arrow:hover{
+  background-color: #555;
+  color: #fff;
+  border-radius: 3px;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .paging .paging-layout .paging-con{
+  flex: 4;
+  /* background-color: #555; */
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .paging .paging-layout .paging-con>ul{
+  display: flex;
+  justify-content: space-between;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .paging .paging-layout .paging-con>ul>li{
+  flex: 1;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(0, 0, 0);
+  /* border: 1px solid; */
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .paging .paging-layout .paging-con>ul>li:hover{
+  background-color: rgba(0, 0, 0, 0.397);
+  color: #fff;
+  border-radius: 3px;
+}
+.on{
+  background-color: rgba(0, 0, 0, 0.192);
+  color: #fff;
+  border-radius: 3px;
+}
+
+.container .inner-container .index .sections .section.sec2{
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+.container .inner-container .index .sections .section.sec2::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con{
+  padding: 20px 0;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con h1.title{
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  padding: 2em 0;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con .video-con{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+.container .inner-container .index .sections .section.sec2 .sec-con .video-con .video-view{
+  flex: 0 1 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con .video-con .video-view video{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con .p-con{
+  box-sizing: border-box;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con .p-con p{
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px 0;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con .p-con p.p1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 20px 0;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con .p-con p.p2{
+  font-size: 1rem;
+  padding: 20px 0;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con .p-con p.p3{
+  line-height: 20px;
+  padding: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 959px){
+  .container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul{
+   
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+  
+  }
+@media only screen and (max-width: 640px){
+  .container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul{
+   
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    
+  
+  }
+}
+
+/*float 적용 예시*/
+/* .container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul{
+  border: 10px solid;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li{
+  width: 25%;
+  height: auto;
+  box-sizing: border-box;
+  border: 1px solid;
+  float: left;
+  padding: 10px;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li img{
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+/* @media only screen and (max-width: 959px){
+  .container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 640px){
+  .container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li{
+    width: 100%;
+  }
+} */
+
+
+/*flex 적용시*/
+/*.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul{
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li{
+  flex: 0 1 24%;
+  margin: 1% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li img{
+ width: 100%;
+ height: 430px;
+ display: block;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li .p-con{
+  height: calc( 600px - 430px - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li .p-con p{
+  /* border: 1px solid; */
+  /* padding: 10px 5px;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li .p-con p.p1{
+  font-size: 24px;
+  text-align: center;
+  padding: 5px 0 0;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li .p-con p.p2{
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 0 10px;
+}
+.container .inner-container .index .sections .section.sec2{}
+
+
+@media only screen and (max-width: 959px){
+  .container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li{
+    flex: 0 1 49.5%;
+    margin: 1% 0;
+  }
+  .container .inner-container .index .sections{
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (max-width: 640px){
+  .container .inner-container .index .sections .section.sec1 .sec-con .shop-con>ul>li{
+    flex: 0 1 100%;
+  }
+} 
+*/
